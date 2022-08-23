@@ -8,5 +8,16 @@ store.dispatch({
     payload: {
         description: 'Bug1'
     }
+});
+
+console.log(store.getState());
+
+store.dispatch({
+    type: 'BUG_REMOVED',
+    payload: {
+        id: 1
+    }
 })
+
+
 console.log(store.getState());
